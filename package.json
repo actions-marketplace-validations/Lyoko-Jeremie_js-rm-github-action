@@ -1,15 +1,17 @@
 {
-  "name": "rm",
-  "version": "1.1.0",
-  "description": "GitHub Action to recursively and forcefully remove a file or directory",
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint index.js",
-    "build": "ncc build index.ts -o dist"
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JesseTG/rm.git"
+    "url": "git+https://github.com/Lyoko-Jeremie/js-rm-github-action.git"
   },
   "keywords": [
     "GitHub",
@@ -19,16 +21,23 @@
   "author": "GitHub",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JesseTG/rm/issues"
+    "url": "https://github.com/Lyoko-Jeremie/js-rm-github-action/issues"
   },
-  "homepage": "https://github.com/JesseTG/rm#readme",
+  "homepage": "https://github.com/Lyoko-Jeremie/js-rm-github-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@actions/io": "^1.0.2"
+    "@actions/io": "^1.0.2",
+    "@types/node": "^20.5.1",
+    "@webpack-cli/generators": "^3.0.7",
+    "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "tsconfig-paths-webpack-plugin": "^4.1.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.36.1",
     "eslint": "^6.8.0",
-    "typescript": "^5.1.6"
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }

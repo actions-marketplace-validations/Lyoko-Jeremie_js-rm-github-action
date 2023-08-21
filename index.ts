@@ -7,7 +7,7 @@ try {
 
     paths.map(T => {
         console.log('rm:', T);
-        return io.rmRF(T).catch((error) => {
+        return io.rmRF(T).catch((error: any) => {
             core.setFailed(error.message);
         });
     });
