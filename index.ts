@@ -1,5 +1,5 @@
-const io = require('@actions/io');
-const core = require('@actions/core');
+import io from '@actions/io';
+import core from '@actions/core';
 
 try {
     const paths = core.getMultilineInput('path', {required: true});
@@ -10,6 +10,6 @@ try {
             core.setFailed(error.message);
         });
     });
-} catch (e) {
+} catch (e: any) {
     core.setFailed(e.message);
 }
