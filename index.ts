@@ -3,6 +3,7 @@ import core from '@actions/core';
 
 try {
     const paths = core.getMultilineInput('path', {required: true});
+    console.log('paths:', paths);
 
     paths.map(T => {
         console.log('rm:', T);

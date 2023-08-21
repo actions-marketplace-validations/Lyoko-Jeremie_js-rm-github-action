@@ -3408,6 +3408,7 @@ __nccwpck_require__.r(__webpack_exports__);
 
 try {
     const paths = _actions_core__WEBPACK_IMPORTED_MODULE_1___default().getMultilineInput('path', { required: true });
+    console.log('paths:', paths);
     paths.map(T => {
         console.log('rm:', T);
         return _actions_io__WEBPACK_IMPORTED_MODULE_0___default().rmRF(T).catch((error) => {
@@ -3416,6 +3417,7 @@ try {
     });
 }
 catch (e) {
+    console.error(e);
     _actions_core__WEBPACK_IMPORTED_MODULE_1___default().setFailed(e.message);
 }
 
