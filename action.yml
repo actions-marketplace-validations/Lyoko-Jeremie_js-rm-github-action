@@ -1,4 +1,4 @@
-name: "Remove File"
+name: "Remove Multi File"
 description: |
   Deletes a given file or folder in a cross-platform way. Succeeds even if there is
   no file at the requested path.
