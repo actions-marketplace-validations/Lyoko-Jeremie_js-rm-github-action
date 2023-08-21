@@ -1,0 +1,31 @@
+name: test
+on: [ push, workflow_dispatch ]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: mk
+        run: |
+          mkdir test1
+          mkdir test2
+          mkdir test3
+
+      - name: rm
+        uses: Lyoko-Jeremie/js-rm-github-action@master
+        with:
+          path: test1
+
+      - name: rm m
+        uses: Lyoko-Jeremie/js-rm-github-action@master
+        with:
+          path: |
+            test2
+            test3
+
+      - name: rm 0
+        uses: Lyoko-Jeremie/js-rm-github-action@master
+        with:
+          path: test0
