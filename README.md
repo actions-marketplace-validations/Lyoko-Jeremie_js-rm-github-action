@@ -14,10 +14,20 @@ Use this action in any particular step like so:
 
 ```yaml
 - name: Remove File
-  uses: JesseTG/rm@v1.0.3
+  uses: Lyoko-Jeremie/ js-rm-github-action@master
   with:
     path: /path/to/something/you/want/to/delete
 
+```
+
+```yaml
+- name: Remove File
+  uses: Lyoko-Jeremie/ js-rm-github-action@master
+  with:
+    path: |
+      /path/to/something/you/want/to/delete1
+      /path/to/something/you/want/to/delete2
+      /path/to/something/you/want/to/delete3
 ```
 
 Other useful facts:
