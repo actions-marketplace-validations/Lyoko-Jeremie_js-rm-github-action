@@ -11,5 +11,6 @@ try {
         });
     });
 } catch (e: any) {
+    console.error(e);
     core.setFailed(e.message);
 }
