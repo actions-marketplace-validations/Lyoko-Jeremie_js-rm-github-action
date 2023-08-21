@@ -14,7 +14,7 @@ Use this action in any particular step like so:
 
 ```yaml
 - name: Remove File
-  uses: Lyoko-Jeremie/ js-rm-github-action@master
+  uses: Lyoko-Jeremie/js-rm-github-action@master
   with:
     path: /path/to/something/you/want/to/delete
 
@@ -22,7 +22,7 @@ Use this action in any particular step like so:
 
 ```yaml
 - name: Remove File
-  uses: Lyoko-Jeremie/ js-rm-github-action@master
+  uses: Lyoko-Jeremie/js-rm-github-action@master
   with:
     path: |
       /path/to/something/you/want/to/delete1
