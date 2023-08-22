@@ -1,14 +1,8 @@
 {
-  "name": "my-webpack-project",
+  "name": "js-rm-github-action",
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "js-rm-github-action",
   "main": "index.js",
-  "scripts": {
-    "build": "webpack --mode=production --node-env=production",
-    "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
-    "watch": "webpack --watch"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lyoko-Jeremie/js-rm-github-action.git"
@@ -26,17 +20,6 @@
   "homepage": "https://github.com/Lyoko-Jeremie/js-rm-github-action#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "@actions/io": "^1.1.3",
-    "@types/node": "^20.5.1",
-    "@webpack-cli/generators": "^3.0.7",
-    "fork-ts-checker-webpack-plugin": "^8.0.0",
-    "tsconfig-paths-webpack-plugin": "^4.1.0"
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "ts-loader": "^9.4.4",
-    "typescript": "^5.1.6",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "@actions/io": "^1.1.3"
   }
 }
