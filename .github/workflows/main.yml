@@ -13,6 +13,9 @@ jobs:
           mkdir test2
           mkdir test3
 
+      - name: ls
+        run: ls | cat
+
       - name: rm
         uses: Lyoko-Jeremie/js-rm-github-action@master
         with:
@@ -29,3 +32,6 @@ jobs:
         uses: Lyoko-Jeremie/js-rm-github-action@master
         with:
           path: test0
+
+      - name: ls
+        run: ls | cat
